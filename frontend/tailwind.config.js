@@ -74,6 +74,11 @@ module.exports = {
           900: '#7f1d1d',
           950: '#450a0a',
         },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

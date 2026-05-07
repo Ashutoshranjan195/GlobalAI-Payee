@@ -30,14 +30,16 @@ const nextConfig = {
     return config;
   },
   async rewrites() {
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+    const aiUrl = process.env.NEXT_PUBLIC_AI_SERVICE_URL || 'http://localhost:8001';
     return [
       {
         source: '/api/:path*',
-        destination: `${process.env.NEXT_PUBLIC_API_URL}/api/:path*`,
+        destination: `${apiUrl}/api/:path*`,
       },
       {
         source: '/ai/:path*',
-        destination: `${process.env.NEXT_PUBLIC_AI_SERVICE_URL}/:path*`,
+        destination: `${aiUrl}/:path*`,
       },
     ];
   },

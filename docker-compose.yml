@@ -58,6 +58,7 @@ services:
       BINANCE_SECRET_KEY: your-binance-secret-key
       GOOGLE_MAPS_API_KEY: your-google-maps-api-key
       OPENEXCHANGE_API_KEY: your-openexchange-api-key
+      AI_SERVICE_URL: http://ai-service:8001
     depends_on:
       - postgres
       - mongodb

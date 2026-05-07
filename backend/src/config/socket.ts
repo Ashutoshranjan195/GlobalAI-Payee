@@ -1,5 +1,6 @@
 import { Server as HttpServer } from 'http';
-import { Server as SocketIOServer } from 'socket.io';
+import { Server as SocketIOServer, Socket } from 'socket.io';
+import express from 'express';
 import { verifyToken } from '@/middleware/auth';
 import { UserService } from '@/services/userService';
 
